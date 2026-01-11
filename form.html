@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/appointment.css">
+    
+    <title>Schedule your appointments</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="form">   
+            <h1><u>Schedule Your Vaccine</u></h1>
+            <div class="field">
+                <label><b>Name:</b></label><br>
+                <input type="text" name="uname" id="user" placeholder="Enter your name">
+                <div  class="error" style="color: red;"></div>
+            </div>
+            <div class="field">
+                <label><b>Father Name/Guardian:</b></label><br>
+                <input type="text" name="fname" id="fname" placeholder="Enter father name or guardian">
+                <div class="error" style="color: red;"></div>
+            </div>
+            <div class=" field">
+                <label><b>Date of Birthday:</b></label><br>
+                <input type="date" name="dob" id="dob">
+                <div class="error" style="color: red;"></div>
+            </div>
+            <div class="radio" id="genderfield">
+                <b>Select your Gender:</b> <br>
+                <label for="101">
+                <input type="radio" value="male" name="gender" id="101">Male
+                </label>
+                <br>
+                <label for="102">
+                <input type="radio" value="female" name="gender" id="102">Female
+                </label>
+                <div class="error" style="color: red;"></div>
+            </div>
+            <div class="field">
+                <label><b>Email:</b></label><br>
+                <input type="text" name="uemail" placeholder="you@gmail.com" id="mail"> 
+                <div class="error" style="color: red;"></div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js/appointment.js"></script>
+</body>
+</html>
