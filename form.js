@@ -6,17 +6,17 @@ let genderfield = document.getElementById('genderfield');
 let gender = document.getElementsByName('gender');
 let mail = document.getElementById('mail'); 
 
-// form.addEventListener('submit', e => {
-//     e.preventDefault();
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-//     let isValid = checkinputs();
+    let isValid = checkinputs();
 
-//     if(isValid) {
-//         alert("Form submitted successfully");
-//         form.reset();  //clear all fields
-//         window.location.reload();    //refresh page
-//     }
-// });
+    if(isValid) {
+        alert("Form submitted successfully");
+        form.reset();  //clear all fields
+        window.location.reload();    //refresh page
+    }
+});
 
 function checkinputs() {
     let uservalue = user.value.trim();
